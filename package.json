@@ -1,0 +1,23 @@
+{
+  "name": "yunye-native",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blists/yunye-native.git"
+  },
+  "keywords": [
+    "native",
+    "js"
+  ],
+  "author": "xwc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Blists/yunye-native/issues"
+  },
+  "homepage": "https://github.com/Blists/yunye-native#readme"
+}
