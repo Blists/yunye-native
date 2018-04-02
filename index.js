@@ -59,7 +59,7 @@
         if (!method || !methods[method] || !methods[method].method) throw new Error("方法为空或未添加此方法");
         if (window.YUNYE) {
             if (window.YUNYE[methods[method].method]) {
-                window.YUNYE[methods[method].method](JSON.stringify(params));
+                params ? window.YUNYE[methods[method].method](JSON.stringify(params)) : window.YUNYE[methods[method].method]();
             } else {
                 oldNative(method, params, methods[method].name + ":window.YUNYE未找到" + methods[method].method + ",使用url交互方式");
             }
@@ -73,7 +73,7 @@
         // ios不建议使用注入方式 不输出warn
         if (!/iPhone/.test()) console.warn(warnInfo);
         var paramsArr = ["method=" + encodeURIComponent(methods[method].method)];
-        for (var key in params) {
+        for (var key in params || {}) {
             paramsArr.push(key + "=" + encodeURIComponent(params[key]));
         }
         var href = url + paramsArr.join("&");
