@@ -52,6 +52,10 @@
         closeTab: {
             name: "关闭webview",
             method: "closeTab"
+        },
+        forceClose: {
+            name: "强制关闭app",
+            method: "forceClose"
         }
     };
 
