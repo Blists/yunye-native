@@ -53,6 +53,10 @@
             name: "关闭webview",
             method: "closeTab"
         },
+        restartApp: {
+            name: "重启app",
+            method: "restartApp"
+        },
         forceClose: {
             name: "强制关闭app",
             method: "forceClose"
