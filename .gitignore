@@ -1,2 +1,7 @@
 .history
-package-lock.json
+.vscode
+.DS_Store
+
+.svn
+.history
+.idea
